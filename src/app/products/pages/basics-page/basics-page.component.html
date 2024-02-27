@@ -30,5 +30,63 @@
         </p-card>
 
     </div>
+    
+    <div class="col-12 md:col-6">
+
+        <p-card header="Fechas">
+
+            <ol>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date:'short'</li>
+                <li>fecha | date:'medium'</li>
+                <li>fecha | date:'long'</li>
+                <li>fecha | date:'full'</li>
+                <li>fecha | date:'shortDate'</li>
+                <li>fecha | date:'MMM'</li>
+                <li>fecha | date:'MMM dd, yyyy'</li>
+            </ol>
+            
+            <hr>
+
+            <ol>
+                <li>fecha | date:'long': 'GMT-6'</li>
+                <li>fecha | date:'long': 'GMT-4'</li>
+                <li>fecha | date:'long': 'GMT-4': 'es-MX'</li>
+                <li>fecha | date:'long': '': 'es-MX'</li>
+            </ol>
+
+        </p-card>
+
+    </div>
+
+    <div class="col-12 md:col-6">
+
+        <p-card header="Resultados fechas">
+            
+            <ol>
+                <li>{{ customDate }}</li>
+                <li>{{ customDate | date }}</li>
+                <li>{{ customDate | date:'short' }}</li>
+                <li>{{ customDate | date:'medium' }}</li>
+                <li>{{ customDate | date:'long' }}</li>
+                <li>{{ customDate | date:'full' }}</li>
+                <li>{{ customDate | date:'shortDate' }}</li>
+                <li>{{ customDate | date:'MMM' }}</li>
+                <li>{{ customDate | date:'MMM dd, yyyy' }}</li>
+            </ol>
+
+            <hr>
+
+            <ol>
+                <li>{{ customDate | date:'long': 'GMT-6' }}</li>
+                <li>{{ customDate | date:'long': 'GMT-4' }}</li>
+                <li>{{ customDate | date:'long': 'GMT-4': 'es-MX' }}</li>
+                <li>{{ customDate | date:'long': '': 'es-MX' }}</li>
+            </ol>
+
+        </p-card>
+
+    </div>
 
 </div>
